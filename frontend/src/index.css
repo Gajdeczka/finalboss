@@ -24,6 +24,28 @@ a:hover {
   color: #535bf2;
 }
 
+h1 {
+  padding: 2px;
+  border: red solid 3px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.list {
+  border: 0px;
+}
+
+.meio {
+  padding: 2em; 
+  height: 300px;
+  width: 500px;
+  border: red solid 3px;
+  align-items: center ;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -39,7 +61,7 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 3px solid red;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -54,6 +76,39 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+}
+
+li > p {
+  margin-left: 4px;
+}
+li > button {
+  padding: 2px;
+  margin-left: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border-radius: 8px;
+  border-color: red;
+  box-sizing: border-box;
+  padding: 1em;
 }
 
 @media (prefers-color-scheme: light) {
